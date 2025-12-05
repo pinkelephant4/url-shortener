@@ -1,9 +1,10 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getOriginalUrl } from "../services/api.js";
 
 const RedirectPage = () => {
     const { shortCode } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const go = async () => {
@@ -11,7 +12,7 @@ const RedirectPage = () => {
                 const data = await getOriginalUrl(shortCode);
                 window.location.href = data.url;
             } catch (err) {
-                alert("Invalid or expired URL");
+                navigate("/notFound");
             }
         };
         go();
