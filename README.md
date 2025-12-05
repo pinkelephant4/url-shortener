@@ -5,8 +5,6 @@ It provides a RESTful API to shorten long URLs, manage them, and view statistics
 
 **Problem Statement Link:** [URL Shortening Service](https://roadmap.sh/projects/url-shortening-service)
 
----
-
 ## 🚀 Features
 
 ### Backend (Express.js + MySQL)
@@ -27,8 +25,6 @@ It provides a RESTful API to shorten long URLs, manage them, and view statistics
 -   View URL statistics.
 -   Client-side validation with helpful UI feedback.
 -   Custom 404 and redirect handling pages.
-
----
 
 ## 📂 Project Structure
 
@@ -79,16 +75,12 @@ client/
 └── package.json
 ```
 
----
-
 ## 🧰 Prerequisites
 
 -   **Node.js** (v16+)
 -   **npm**
 -   **MySQL**
 -   Optional: **Vite** globally installed for frontend development
-
----
 
 # 🛠️ Backend Setup (Server)
 
@@ -128,8 +120,6 @@ npm run dev
 npm start
 ```
 
----
-
 ## 📡 API Documentation
 
 ### Base URL
@@ -168,8 +158,6 @@ or
 }
 ```
 
----
-
 # 🎨 Frontend Setup (Client)
 
 ## 1. Installation
@@ -207,8 +195,6 @@ npm run build
 npm run preview
 ```
 
----
-
 ## 📦 Dependencies Overview
 
 ### Backend
@@ -231,8 +217,6 @@ npm run preview
 -   **Vite**
 -   **ESLint**
 
----
-
 ## 📝 Future Enhancements
 
 -   Add authentication (JWT).
@@ -240,8 +224,6 @@ npm run preview
 -   Custom short codes chosen by users.
 -   Dashboard with charts for analytics.
 -   Dockerization for easy deployment.
-
----
 
 ## 🤝 Contributing
 
